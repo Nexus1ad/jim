@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    div#area{
+        background-color: aquamarine;
+        color: azure;
+        width: 200px;
+        height: 200px;
+        font: normal 25pt arial;
+        text-align: center;
+        line-height: 200px;
+    }
+</style>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" ondblclick="dblclick()">
+        Yakmin
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar(){
+            a.innerText = 'Keyla Bonga'
+            a.style.font = 'bold 25pt arial'
+            a.style.textAlign = 'center'
+            a.style.lineHeight = '200px'
+            a.style.backgroundColor = 'pink'
+            a.style.color = 'azure'
+        }
+        function entrar(){
+            a.innerText = 'Edmilson'
+            a.style.font = 'bold 25pt arial'
+            a.style.textAlign = 'center'
+            a.style.lineHeight = '200px'
+            a.style.backgroundColor = 'Black'
+            a.style.color = 'azure'
+        }
+        function sair(){
+            a.innerText = 'Cledwyn'
+            a.style.font = 'italic 25pt arial'
+            a.style.textAlign = 'center'
+            a.style.lineHeight = '200px'
+            a.style.backgroundColor = 'Yellow'
+            a.style.color = 'azure'
+        }
+        function dblclick(){
+            a.innerText = 'Yakmin'
+            a.style.font = 'italic 25pt arial'
+            a.style.textAlign = 'center'
+            a.style.lineHeight = '200px'
+            a.style.backgroundColor = 'aquamarine'
+            a.style.color = 'azure'
+        }
+    </script>
+</body>
+</html>
